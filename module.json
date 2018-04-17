@@ -1,9 +1,9 @@
 {
   "name": "unity",
-  "version": "2.4.3",
-  "description": "UNITY - UNIT TESTING FOR C",
+  "version": "0.1.0",
+  "description": "UNITY - a simple test framwork for mbed",
   "keywords": ["unity", "test framwork", "unit test"],
-  "author": "Mike Karlesky, Mark VanderVoord, Greg Williams",
+  "author": "Lincoln Niu",
   "license": "MIT",
   "dependencies": {
     "mbed-classic": "lancaster-university/mbed-classic#microbit_hfclk+mb6"

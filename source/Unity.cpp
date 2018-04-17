@@ -13,12 +13,12 @@ void unity_test_run(UnityTestFunction func, const char* func_name) {
 
 void unity_success(const char* msg, const int line) {
     _total_test_case++;
-    pc.printf("...asserting(line: %04d) - result: PASSED \r\n", line);
+    // pc.printf("...asserting(line: %04d) - result: PASSED \r\n", line);
 }
 
 void unity_fail(const char* msg, const int line) {
 
-    pc.printf("...asserting(line: %04d) in function(%s) - result: FAILED; %s \r\n", line, _current_func_name, msg);
+    pc.printf("...asserting[line: %04d] failed in function(%s) (%s)\r\n", line, _current_func_name, msg);
     _total_test_case++;
     _total_test_failed++;
 }

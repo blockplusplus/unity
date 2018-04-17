@@ -32,6 +32,10 @@ void unity_test_waiting_to_go() {
 }
 
 void unity_test_start() {
+    // Set baud to 9600
+    pc.baud(9600);
+    pc.format();
+
     pc.puts("Press g to start testing...\r\n");
     unity_test_waiting_to_go();
 }

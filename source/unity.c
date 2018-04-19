@@ -357,6 +357,7 @@ void UnityPrintFloat(const UNITY_DOUBLE input_number)
 static void UnityTestResultsBegin(const char* file, const UNITY_LINE_TYPE line)
 {
     UnityPrint(file);
+    UNITY_PRINT_EOL();
     UNITY_OUTPUT_CHAR(':');
     UnityPrintNumber((UNITY_INT)line);
     UNITY_OUTPUT_CHAR(':');
